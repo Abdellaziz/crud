@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <div class="mx-auto w-75 my-5">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="proudcet name">
+            <label for="name">proudcet name</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" class="form-control" id="price" placeholder="proudcet price">
+            <label for="price">proudcet price</label>
+          </div>
+          <div class="form-floating my-3">
+            <input type="text" class="form-control" id="model" placeholder="proudcet model">
+            <label for="model">proudcet model</label>
+          </div>
+          <div class="form-floating my-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="description" style="height: 100px"></textarea>
+            <label for="description">proudcet description</label>
+          </div>
+    <button class="btn btn-primary" id="add" onclick="proudcet()" >Add proudcet</button>
+
+
+    </div>
+    <div class="form-floating mb-3 w-75 mx-auto">
+        <input type="text" class="form-control" id="search" placeholder="search proudcet" onkeyup="searchproudct(this.value)">
+        <label for="search">search proudcet</label>
+      </div>
+    <div>
+      <table class="table w-75 text-center mx-auto">
+        <thead>
+            <th>index</th>
+            <th>productname</th>
+            <th>productprice</th>
+            <th>productmodel</th>
+            <th>productdescription</th>
+            <th>update</th>
+            <th>delete</th>
+          </thead>
+        <tbody id="insertrow">
+         
+        </tbody>
+      </table>
+
+    </div>
+    
+   
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
